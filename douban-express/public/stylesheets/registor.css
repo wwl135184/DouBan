@@ -1,0 +1,128 @@
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: 0; }
+
+input {
+  outline: none; }
+
+/*web headerCSS*/
+.header {
+  width: 950px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  zoom: 1; }
+  .header .single-nav {
+    padding-top: 30px; }
+
+/*web mainCSS*/
+.wrapper {
+  width: 950px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  zoom: 1; }
+  .wrapper h1 {
+    display: block;
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #494949;
+    line-height: 1.1; }
+  .wrapper .article {
+    float: left;
+    width: 590px;
+    margin-right: 50; }
+    .wrapper .article form {
+      position: relative;
+      left: 0;
+      top: 0; }
+      .wrapper .article form .item {
+        clear: both;
+        margin: 15px 0; }
+        .wrapper .article form .item label {
+          display: inline-block;
+          float: left;
+          margin-right: 15px;
+          text-align: right;
+          width: 60px;
+          font-size: 14px;
+          line-height: 30px;
+          vertical-align: middle; }
+        .wrapper .article form .item .basic-input {
+          width: 200px;
+          padding: 5px;
+          height: 18px;
+          font-size: 14px;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          border: 1px solid #c9c9c9; }
+      .wrapper .article form .item-submit {
+        margin-top: 25px; }
+        .wrapper .article form .item-submit label {
+          display: inline-block;
+          float: left;
+          margin-right: 15px;
+          text-align: right;
+          width: 60px;
+          font-size: 14px;
+          line-height: 30px;
+          vertical-align: middle; }
+        .wrapper .article form .item-submit .enabled {
+          color: #ffffff;
+          background: #3fa156;
+          border: 1px solid #528641; }
+        .wrapper .article form .item-submit .btn-submit {
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 6px 26px;
+          border-radius: 3px;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px; }
+  .wrapper .extra-tips .validate-option {
+    padding-left: 10px;
+    background: url(/images/tips_arrow.gif) no-repeat left 4px;
+    font-size: 12px;
+    color: #808080;
+    line-height: 1.62; }
+  .wrapper .extra-tips .validate-error {
+    padding-left: 10px;
+    background: url(/images/tips_arrow.gif) no-repeat left -52px;
+    font-size: 12px;
+    color: #fe2617;
+    line-height: 1.62; }
+  .wrapper .suggestion {
+    padding-left: 75px; }
+    .wrapper .suggestion .tips {
+      font-size: 12px;
+      color: #808080; }
+
+.footer {
+  width: 950px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  zoom: 1;
+  font-size: 14px; }
+  .footer #footer {
+    color: #999;
+    padding-top: 6px;
+    border-top: 1px dashed #ddd; }
+    .footer #footer .fright {
+      float: right; }
+      .footer #footer .fright a {
+        color: #336699; }
+        .footer #footer .fright a:hover {
+          background: #669;
+          color: #fff; }
+
+/*# sourceMappingURL=registor.css.map */

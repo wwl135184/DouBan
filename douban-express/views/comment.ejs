@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>豆瓣电影</title>
+		<link rel="stylesheet" href="/stylesheets/comment.css" type = "text/css"/>
+		<script type = "text/javascript" src = "/javascripts/require.js" defer async="true" data-main = "/javascripts/comment_main"></script>
+	</head>
+	<body>
+		<div class="reviews">
+			<div class="reviews-hd">
+				<h2>
+					最受欢迎的影评
+					<span>更多热门影评</span>
+					<span>新片影评>></span>
+				</h2>
+			</div>
+			<ul>
+				<% resData.forEach(function(item, index) { %>
+				<li>
+					<div class="reviews-bd">
+						<div class="review">
+							<div class="review-hd">
+								<img src= "/images/p2298326979.webp"/>
+							</div>
+							<div class="review-bd">
+								<h3><%= item.title %></h3>
+								<div class="review-meta">
+									<span class="username"><%= item.username %></span>
+									<span>评论</span>
+									<span class="movieName">《恶棍天使》</span>
+									<span class="allstar20"></span>
+								</div>
+								<div class="review-content">
+									<%= item.val %>
+			                    </div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<% }) %>
+			</ul>
+			<div>
+				<a href="/comment?pageNo=1">首页</a>
+		        <a href="/comment?pageNo=<%= pageNo>1 ? parseInt(pageNo)-1 : 1 %>">上一页</a>
+		        第<%= pageNo %>页/共<%= totalPage %>页
+		        <a href="/comment?pageNo=<%=pageNo<totalPage ? parseInt(pageNo)+1 : totalPage %>">下一页</a>
+		        <a href="/comment?pageNo=<%= totalPage %>">最后一页</a>
+		        共<%= count %>条数据
+			</div>
+			<div class="comment">
+				<form action="/users/talk" method="post">
+					标题：<input type="text" class="title no" name = "title"/><br />
+					内容：<input type="text" class="content no" name = "content"/>
+					<div>
+						<input type="submit" id = "lessue" value="评价" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

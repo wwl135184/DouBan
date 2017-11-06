@@ -1,0 +1,141 @@
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, p {
+    margin: 0;
+    padding: 0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:0;
+}
+input{
+	outline: none;
+}
+/*web headerCSS*/
+@mixin mainCSS{
+	width: 950px;
+    margin: 0 auto 40px;
+    overflow: hidden;
+    zoom: 1;
+}
+@mixin label{
+	display: inline-block;
+    float: left;
+    margin-right: 15px;
+    text-align: right;
+    width: 60px;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.header{
+	@include mainCSS;
+    .single-nav{
+    	padding-top:30px;
+    }
+}
+/*web mainCSS*/
+.wrapper{
+	@include mainCSS;
+	h1{
+		display: block;
+	    margin: 0;
+	    padding: 0 0 15px 0;
+	    font-size: 25px;
+	    font-weight: bold;
+	    color: #494949;
+	    line-height: 1.1;
+	}
+	.article{
+		float: left;
+	    width: 590px;
+	    margin-right: 50;
+	    form{
+	    	position: relative;
+		    left: 0;
+		    top: 0;
+		    .item{
+				clear: both;
+    			margin: 15px 0;
+				label{
+					@include label;
+				}
+				.basic-input{
+					width: 200px;
+				    padding: 5px;
+				    height: 18px;
+				    font-size: 14px;
+				    -moz-border-radius: 3px;
+				    -webkit-border-radius: 3px;
+				    border-radius: 3px;
+				    border: 1px solid #c9c9c9;
+				}
+		    }
+		    .item-submit{
+		    	margin-top: 25px;
+		    	label{
+		    		@include label;
+		    	}
+		    	.enabled{
+		    		color: #ffffff;
+				    background: #3fa156;
+				    border: 1px solid #528641;
+		    	}
+		    	.btn-submit {
+				    cursor: pointer;
+				    font-size: 14px;
+				    font-weight: bold;
+				    padding: 6px 26px;
+				    border-radius: 3px;
+				    -moz-border-radius: 3px;
+				    -webkit-border-radius: 3px;
+				}
+		    }
+	    }
+	}
+	.extra-tips {
+		.validate-option{
+			padding-left: 10px;
+	    	background: url(/images/tips_arrow.gif) no-repeat left 4px;
+	    	font-size: 12px;
+	    	color: #808080;
+	    	line-height: 1.62;
+		}
+		.validate-error{
+			padding-left: 10px;
+    		background: url(/images/tips_arrow.gif) no-repeat  left -52px;
+    		font-size: 12px;
+	    	color: #fe2617;
+	    	line-height: 1.62;
+		}
+	}
+	.suggestion{
+		padding-left:75px;
+		.tips{
+			font-size: 12px;
+    		color: #808080;
+		}
+	}
+}
+.footer{
+	@include mainCSS;
+	font-size:14px;
+	#footer{
+		color: #999;
+	    padding-top: 6px;
+	    border-top: 1px dashed #ddd;
+	    .fright{
+			float: right;
+			a{
+				color: #336699;
+				&:hover{
+					background:#669;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

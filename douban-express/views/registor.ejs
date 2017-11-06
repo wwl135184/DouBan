@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎加入豆瓣</title>
+		<link rel="stylesheet" href="/stylesheets/registor.css" type = "text/css"/>
+		<script type = "text/javascript" src = "/javascripts/require.js" defer async="true" data-main = "/javascripts/main"></script>
+	</head>
+	<body>
+		<!--网页头部-->
+		<div class="header">
+			<div class="single-nav">
+				<a href="#">
+					<img src="/images/lg_account.png"/>
+				</a>
+			</div>
+		</div>
+		<!--网页main部分-->
+		<div class="wrapper">
+			<h1>欢迎加入豆瓣</h1>
+			<div class="article">
+				<form action="/users/registor" method="post">
+					<div class="item extra-tips">
+						<label>邮箱</label>
+						<input type="text" id = "email" class="basic-input" name = "alias" value=""/>
+						<span class="validate-option" style="display: none;" id = "emailJudge">请输入邮箱地址</span>
+						<span class="validate-error" style="display: none;" id = "emailError">请输入正确的邮箱的地址</span>
+					</div>
+					<div class="item extra-tips has-error">
+						<label>密码</label>
+						<input type="password" name = "password" id = "password" class="basic-input">
+						<span class="validate-option" style="display: none;" id = "pwdJudge">至少包含字母和数字，最短8个字符，区分大小写</span>
+						<span class="validate-error" style="display: none;" id = "pwdError">密码不能为空</span>
+					</div>
+					<div class="item extra-tips has-error">
+						<label>名号</label>
+						<input type="text" id = "name" name = "name" class="basic-input"/>
+						<span class="validate-option" style="display: none;" id = "nameJudge">中、英文均可，最长14个英文或7个汉字</span>
+						<span class="validate-error" style="display: none;" id = "nameError">名号不能为空</span>
+					</div>
+					<div class="suggestion">
+						<span class="tips">第一印象很重要，起个响亮的名号吧</span>
+					</div>
+					<div class="item-submit">
+						<label>&nbsp;</label>
+						<input type="submit" name = "registor" id = "button" value = "注册" class="btn-submit enabled"/>
+					</div>
+				</form>
+			</div>
+			<div class="aside">
+				<ul class="sidenav">
+					<li>>&nbsp;已拥有豆瓣账号？<a rel = "nofollow" href="/login">直接登入</a></li>
+					<li>>&nbsp;<a href="#">点击下载豆瓣移动应用</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--网页footer-->
+		<div class="footer">
+			<div id = "footer">
+				<span class="fleft gray-link">
+    		©&nbsp;2005－2017 douban.com, all rights reserved</span>
+    			<span class="fright">
+					<a href="#">关于豆瓣</a>
+					<a href="#">在豆瓣工作</a>
+					<a href="#">联系我们</a>
+					<a href="#">免责声明</a>
+					<a href="#">帮助中心</a>
+					<a href="#">开发者</a>
+					<a href="#">移动应用</a>
+					<a href="#">豆瓣广告</a>
+				</span>
+			</div>
+		</div>
+	</body>
+</html>

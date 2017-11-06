@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% if(!username) { %>
+		<input type="button" value="登录豆瓣" onclick="location.href='/login'">
+		<input type="button" value="注册" onclick="location.href='/registor'">
+	<% }else{ %>
+		你好！<%= username %>，欢迎登录。
+		<input type="button" value = "注销" onclick="location.href = '/logout'">
+		<input type="button" value = "评价" onclick="location.href = '/comment'">
+	<% } %>
+  </body>
+</html>
